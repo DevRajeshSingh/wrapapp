@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import logo from './logo.png'
 export default function Navbar(props) {
   return (
     <nav
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
     >
       <div className="container-fluid">
-        <img src="./logo.png" alt="logo" style={{width : "40px" , height:"40px" ,marginRight : "5px" , borderRadius :"4.5px",filter: `${props.mode=="light" ? "invert(1)" :" invert(0)"}`}}/>
+        <img src={logo} alt="logo" style={{width : "40px" , height:"40px" ,marginRight : "5px" , borderRadius :"4.5px",filter: `${props.mode==="light" ? "invert(1)" :" invert(0)"}`}}/>
         <span className="navbar-brand">
           Wrap
         </span>

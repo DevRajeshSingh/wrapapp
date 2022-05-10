@@ -55,7 +55,7 @@ export default function SpeedTest(props) {
       setTimer(false);
     }
 
-    if (textEntered == testText) {
+    if (textEntered === testText) {
       // console.log("return");
       setBorder("#28a745");
       if (!timer) {
@@ -63,7 +63,7 @@ export default function SpeedTest(props) {
         setTimer(true);
         setTextColor("#28a745")
       }
-    } else if (textEntered == matchText) {
+    } else if (textEntered === matchText) {
       // console.log("matched text")
       setBorder("#0d6efd");
       if (m.seconds) {

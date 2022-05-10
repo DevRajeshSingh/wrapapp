@@ -212,7 +212,7 @@ export default function MainContent(props) {
                 inpText
                   .replace(/\n/g, " ")
                   .split(" ")
-                  .filter((value) => value != "").length
+                  .filter((value) => value !== "").length
               }{" "}
               &emsp; Characters : {inpText === "" ? 0 : inpText.length}
             </label>
